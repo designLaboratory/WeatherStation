@@ -5,11 +5,11 @@
 <h2>Tool Versions:</h2>
 IDE-Version: µVision V5.21.1.0
 Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Rafal Jablonski, student, LIC=----
+License Information: Mateusz s, AGH, LIC=----
  
 Tool Versions:
 Toolchain:       MDK-Lite  Version: 5.21a
-Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+Toolchain Path:  D:\Programy\keil\ARM\ARMCC\Bin
 C Compiler:      Armcc.exe V5.06 update 3 (build 300)
 Assembler:       Armasm.exe V5.06 update 3 (build 300)
 Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
@@ -21,44 +21,52 @@ Target DLL:      CMSIS_AGDI.dll V1.26.5.0
 Dialog DLL:      TARMCM1.DLL V1.10.0.0
  
 <h2>Project:</h2>
-E:\Dokumenty\elektronika\semestr V\Laboratorium Projektowe\weather\weather.uvprojx
-Project File Date:  12/10/2016
+D:\Studia\weather\trunk\weather.uvprojx
+Project File Date:  02/18/2017
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
-Build target 'Target 1'
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\Programy\keil\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling I2C.c...
 compiling main.c...
+compiling GPIO.c...
+compiling s401.c...
+compiling LCD.c...
+compiling TC74.c...
+assembling startup_MKL46Z4.s...
+compiling WS2812.c...
+compiling system_MKL46Z4.c...
 linking...
-Program Size: Code=4612 RO-data=464 RW-data=268 ZI-data=460  
+Program Size: Code=4604 RO-data=464 RW-data=268 ZI-data=460  
 ".\Objects\weather.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: ARM
-                http://www.keil.com/pack/ARM.CMSIS.5.0.0-Beta12.pack
-                ARM::CMSIS:CORE:5.0.0
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
                 CMSIS (Cortex Microcontroller Software Interface Standard)
-   * Component: CORE Version: 5.0.0
+   * Component: CORE Version: 4.3.0
 
 Package Vendor: Keil
-                http://www.keil.com/pack/Keil.Kinetis_KLxx_DFP.1.12.0.pack
+                http://www.keil.com/pack/Keil.Kinetis_KLxx_DFP.1.3.0.pack
                 Keil::Device:Startup:1.0.0
-                NXP Kinetis KLxx Series Device Support and Examples
+                Freescale Kinetis KLxx Series Device Support and Examples
    * Component: Startup Version: 1.0.0
 
 <h2>Collection of Component include folders:</h2>
-  E:\Dokumenty\elektronika\semestr V\Laboratorium Projektowe\weather\RTE
-  D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta12\CMSIS\Include
-  D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include
+  D:\Studia\weather\trunk\RTE
+  D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
 
-   * Component: ARM::CMSIS:CORE:5.0.0
+   * Component: ARM::CMSIS:CORE:4.3.0
 
    * Component: Keil::Device:Startup:1.0.0
       Source file:   Device\Source\ARM\startup_MKL46Z4.s
       Source file:   Device\Source\system_MKL46Z4.c
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:04
 </pre>
 </body>
 </html>
