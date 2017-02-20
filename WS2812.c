@@ -3,7 +3,7 @@
 #define DMA_LEADING_ZEROS  2																															//zeros for start period
 #define BITS_PER_RGB       24																															//all bits for configure one diode (24 bits)
 #define DMA_TRAILING_ZEROS 1																															//zeros for start period
-#define MAX_LEDS_PER_STRIP 2																															//leds number in strip
+#define MAX_LEDS_PER_STRIP 64																															//leds number in strip
 #define PIN_NUMBER 2																																			//pin number in PTD
 
 uint8_t pixel_table[MAX_LEDS_PER_STRIP*3];           	 																		//table of pixels, each three elements are in order 1 - R, 2 - G, 3 - B
@@ -181,7 +181,7 @@ void clock_init(void) {																																		//function depend for i
 }
 
 void dma_data_init(void) {																																//function depend for set as 255 each element of dma_data.all_ones table	and dma_data start tables																	
-    uint8_t i = 0;
+    uint32_t i = 0;
 		for (i = 0; i < (BITS_PER_RGB * MAX_LEDS_PER_STRIP); i++) {
 			dma_data.all_ones[i] = 255;
 		}		
@@ -258,7 +258,7 @@ void set_pixel_color(uint16_t pix_num, uint8_t red, uint8_t green, uint8_t blue)
 }
 
 void initialize_pixel_tables() {                  																				//function depend for 
-		uint8_t i = 0;																																				//variable for loops
+		uint32_t i = 0;																																				//variable for loops
 		for (i = 0; i < (MAX_LEDS_PER_STRIP*3); i++) {																				//clear table of pixels, each three elements contains G, R and B value (0 - 255 each) 
 				pixel_table[i] = 0;
 		}
@@ -268,4 +268,9 @@ void initialize_pixel_tables() {                  																				//function
 	  pin_mask = 1ul << PIN_NUMBER; 																												//make a mask for pin number in Port D                              
 }
 
-
+void diodes_default(void){
+	int i = 0;
+	for(i = 0; i < 64; i++){
+		set_pixel_color(i, 0, 0, 0);
+	}
+}

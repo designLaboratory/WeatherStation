@@ -1,10 +1,3 @@
-/** ****************************************************************************
- *   FRDM-KL46Z - Peripherals
- *    Module: I2C
- *    Version: 0.1
- *  ****************************************************************************
- */
-
 #include "MKL46Z4.h"
 
 #include "I2C.h"
@@ -13,16 +6,8 @@ void I2C_Disable(I2C_Type* i2c){
   i2c->C1 &= ~I2C_C1_IICEN_MASK;
 }
 
-void I2C_DisableInt(I2C_Type* i2c){
-  i2c->C1 &= ~I2C_C1_IICIE_MASK;
-}
-
 void I2C_Enable(I2C_Type* i2c){
   i2c->C1 |= I2C_C1_IICEN_MASK;
-}
-
-void I2C_EnableInt(I2C_Type* i2c){
-  i2c->C1 |= I2C_C1_IICIE_MASK;
 }
 
 uint8_t I2C_ReadByte(I2C_Type* i2c, uint8_t ack){
@@ -86,4 +71,23 @@ uint8_t I2C_WriteByte(I2C_Type* i2c, uint8_t data){
   
   // Return received ACK bit
   return ((i2c->S & I2C_S_RXAK_MASK) == I2C_S_RXAK_MASK ? I2C_NACK : I2C_ACK);
+}
+
+void I2C_Init(void){
+  // Set baudrate to 400 kb/s
+  I2C1->F   = I2C_F_MULT(2)
+            | I2C_F_ICR(0x5);
+}
+
+void GPIO_Config(void){
+  PORTE->PCR[0]  = PORT_PCR_MUX(6);         // Alternative function: 6 (I2C1_SDA)
+  PORTE->PCR[1]  = PORT_PCR_MUX(6);         // Alternative function: 6 (I2C1_SCL)
+}
+
+void clock_Config(void){
+  SystemCoreClockUpdate();
+  SysTick_Config(SystemCoreClock/1000);
+  
+  SIM->SCGC4 |= SIM_SCGC4_I2C1_MASK;        // Enable clock for I2C1
+  SIM->SCGC5 |= SIM_SCGC5_PORTE_MASK;       // Enable clock for Port E
 }

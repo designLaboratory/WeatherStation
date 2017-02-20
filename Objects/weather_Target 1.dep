@@ -1,85 +1,119 @@
 Dependencies for Project 'weather', Target 'Target 1': (DO NOT MODIFY !)
-F (.\main.c)(0x584C628A)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-ID:\Studia\weather\trunk\RTE-ID:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-ID:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (D:\Programy\keil\ARM\ARMCC\include\stdio.h)(0x574E9286)
-I (GPIO.h)(0x52999214)
-I (D:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\MKL46Z4.h)(0x51C01318)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0plus.h)(0x56260B6C)
-I (D:\Programy\keil\ARM\ARMCC\include\stdint.h)(0x574E9286)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\system_MKL46Z4.h)(0x51C01318)
-I (I2C.h)(0x52C1908A)
+F (.\main.c)(0x58AADF22)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I"E:\Dokumenty\elektronika\semestr V\Laboratorium Projektowe\weather\RTE"-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x574EA096)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\MKL46Z4.h)(0x55FBCAE8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\core_cm0plus.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574EA096)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_compiler.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_armcc.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\system_MKL46Z4.h)(0x55FBCAE8)
+I (I2C.h)(0x58AADB65)
 I (LCD.h)(0x52894A04)
-I (LCDConfig.h)(0x526772BE)
+I (LCDConfig.h)(0x526764AE)
 I (FRDM-s401.h)(0x52894A8A)
-I (Main.h)(0x52C18E82)
-I (TC74.h)(0x584C5BC8)
-I (WS2812.h)(0x58283E16)
-F (.\GPIO.c)(0x58A82C2F)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-ID:\Studia\weather\trunk\RTE-ID:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-ID:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
-I (D:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\MKL46Z4.h)(0x51C01318)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0plus.h)(0x56260B6C)
-I (D:\Programy\keil\ARM\ARMCC\include\stdint.h)(0x574E9286)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\system_MKL46Z4.h)(0x51C01318)
-I (GPIO.h)(0x52999214)
-F (.\I2C.c)(0x58A82C2F)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-ID:\Studia\weather\trunk\RTE-ID:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-ID:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
-I (D:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\MKL46Z4.h)(0x51C01318)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0plus.h)(0x56260B6C)
-I (D:\Programy\keil\ARM\ARMCC\include\stdint.h)(0x574E9286)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\system_MKL46Z4.h)(0x51C01318)
-I (I2C.h)(0x52C1908A)
-F (.\LCD.c)(0x529E62F0)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-ID:\Studia\weather\trunk\RTE-ID:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-ID:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\lcd.o --omf_browse .\objects\lcd.crf --depend .\objects\lcd.d)
-I (D:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\MKL46Z4.h)(0x51C01318)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0plus.h)(0x56260B6C)
-I (D:\Programy\keil\ARM\ARMCC\include\stdint.h)(0x574E9286)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\system_MKL46Z4.h)(0x51C01318)
+I (STLM75.h)(0x58AAD299)
+I (WS2812.h)(0x58AADF23)
+I (LPS331.h)(0x58AAD299)
+I (HTS221.h)(0x58AAD2EE)
+I (TSL25721.h)(0x58AAD2EE)
+I (transf.h)(0x58AAD351)
+I (SysTick.h)(0x58AADBF8)
+F (.\I2C.c)(0x58AADB65)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I"E:\Dokumenty\elektronika\semestr V\Laboratorium Projektowe\weather\RTE"-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\MKL46Z4.h)(0x55FBCAE8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\core_cm0plus.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574EA096)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_compiler.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_armcc.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\system_MKL46Z4.h)(0x55FBCAE8)
+I (I2C.h)(0x58AADB65)
+F (.\LCD.c)(0x58AAD822)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I"E:\Dokumenty\elektronika\semestr V\Laboratorium Projektowe\weather\RTE"-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\lcd.o --omf_browse .\objects\lcd.crf --depend .\objects\lcd.d)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\MKL46Z4.h)(0x55FBCAE8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\core_cm0plus.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574EA096)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_compiler.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_armcc.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\system_MKL46Z4.h)(0x55FBCAE8)
 I (LCD.h)(0x52894A04)
-I (LCDConfig.h)(0x526772BE)
+I (LCDConfig.h)(0x526764AE)
 I (FRDM-s401.h)(0x52894A8A)
-F (.\s401.c)(0x5297B7A4)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-ID:\Studia\weather\trunk\RTE-ID:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-ID:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\s401.o --omf_browse .\objects\s401.crf --depend .\objects\s401.d)
-I (LCDConfig.h)(0x526772BE)
+F (.\s401.c)(0x5297B7A4)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I"E:\Dokumenty\elektronika\semestr V\Laboratorium Projektowe\weather\RTE"-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\s401.o --omf_browse .\objects\s401.crf --depend .\objects\s401.d)
+I (LCDConfig.h)(0x526764AE)
 I (FRDM-s401.h)(0x52894A8A)
-F (.\TC74.c)(0x52C80424)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-ID:\Studia\weather\trunk\RTE-ID:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-ID:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\tc74.o --omf_browse .\objects\tc74.crf --depend .\objects\tc74.d)
-I (D:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\MKL46Z4.H)(0x51C01318)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0plus.h)(0x56260B6C)
-I (D:\Programy\keil\ARM\ARMCC\include\stdint.h)(0x574E9286)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\system_MKL46Z4.h)(0x51C01318)
-I (I2C.h)(0x52C1908A)
-I (TC74.h)(0x584C5BC8)
-F (.\GPIO.h)(0x52999214)()
-F (.\I2C.h)(0x52C1908A)()
+F (.\STLM75.c)(0x58AAD351)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I"E:\Dokumenty\elektronika\semestr V\Laboratorium Projektowe\weather\RTE"-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\stlm75.o --omf_browse .\objects\stlm75.crf --depend .\objects\stlm75.d)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\MKL46Z4.H)(0x55FBCAE8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\core_cm0plus.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574EA096)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_compiler.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_armcc.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\system_MKL46Z4.h)(0x55FBCAE8)
+I (I2C.h)(0x58AADB65)
+I (STLM75.h)(0x58AAD299)
+I (transf.h)(0x58AAD351)
+F (.\I2C.h)(0x58AADB65)()
 F (.\LCD.h)(0x52894A04)()
-F (.\LCDConfig.h)(0x526772BE)()
-F (.\Main.h)(0x52C18E82)()
-F (.\TC74.h)(0x584C5BC8)()
-F (.\WS2812.c)(0x583ACA68)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-ID:\Studia\weather\trunk\RTE-ID:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-ID:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\ws2812.o --omf_browse .\objects\ws2812.crf --depend .\objects\ws2812.d)
-I (WS2812.h)(0x58283E16)
-I (D:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\MKL46Z4.h)(0x51C01318)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0plus.h)(0x56260B6C)
-I (D:\Programy\keil\ARM\ARMCC\include\stdint.h)(0x574E9286)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\system_MKL46Z4.h)(0x51C01318)
-F (.\WS2812.h)(0x58283E16)()
-F (RTE\Device\MKL46Z256xxx4\startup_MKL46Z4.s)(0x55FBCAE8)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g --apcs=interwork -ID:\Studia\weather\trunk\RTE-ID:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-ID:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include--pd "__UVISION_VERSION SETA 521" --pd "_RTE_ SETA 1" --pd "MKL46Z256xxx4 SETA 1"--list .\listings\startup_mkl46z4.lst --xref -o .\objects\startup_mkl46z4.o --depend .\objects\startup_mkl46z4.d)
-F (RTE\Device\MKL46Z256xxx4\system_MKL46Z4.c)(0x55FBCAE8)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-ID:\Studia\weather\trunk\RTE-ID:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-ID:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\system_mkl46z4.o --omf_browse .\objects\system_mkl46z4.crf --depend .\objects\system_mkl46z4.d)
-I (D:\Programy\keil\ARM\ARMCC\include\stdint.h)(0x574E9286)
-I (D:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\MKL46Z4.h)(0x51C01318)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0plus.h)(0x56260B6C)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625F7B0)
-I (D:\Programy\keil\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\system_MKL46Z4.h)(0x51C01318)
+F (.\LCDConfig.h)(0x526764AE)()
+F (.\Main.h)(0x58AADA7A)()
+F (.\STLM75.h)(0x58AAD299)()
+F (.\WS2812.c)(0x58AADF23)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I"E:\Dokumenty\elektronika\semestr V\Laboratorium Projektowe\weather\RTE"-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\ws2812.o --omf_browse .\objects\ws2812.crf --depend .\objects\ws2812.d)
+I (WS2812.h)(0x58AADF23)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\MKL46Z4.h)(0x55FBCAE8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\core_cm0plus.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574EA096)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_compiler.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_armcc.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\system_MKL46Z4.h)(0x55FBCAE8)
+F (.\WS2812.h)(0x58AADF23)()
+F (.\LPS331.c)(0x58AAD71B)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I"E:\Dokumenty\elektronika\semestr V\Laboratorium Projektowe\weather\RTE"-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\lps331.o --omf_browse .\objects\lps331.crf --depend .\objects\lps331.d)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\MKL46Z4.H)(0x55FBCAE8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\core_cm0plus.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574EA096)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_compiler.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_armcc.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\system_MKL46Z4.h)(0x55FBCAE8)
+I (I2C.h)(0x58AADB65)
+I (LPS331.h)(0x58AAD299)
+I (transf.h)(0x58AAD351)
+F (.\HTS221.c)(0x58AAD71B)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I"E:\Dokumenty\elektronika\semestr V\Laboratorium Projektowe\weather\RTE"-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\hts221.o --omf_browse .\objects\hts221.crf --depend .\objects\hts221.d)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\MKL46Z4.H)(0x55FBCAE8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\core_cm0plus.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574EA096)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_compiler.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_armcc.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\system_MKL46Z4.h)(0x55FBCAE8)
+I (I2C.h)(0x58AADB65)
+I (HTS221.h)(0x58AAD2EE)
+I (transf.h)(0x58AAD351)
+F (.\TSL25721.c)(0x58AAD71B)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I"E:\Dokumenty\elektronika\semestr V\Laboratorium Projektowe\weather\RTE"-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\tsl25721.o --omf_browse .\objects\tsl25721.crf --depend .\objects\tsl25721.d)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\MKL46Z4.H)(0x55FBCAE8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\core_cm0plus.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574EA096)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_compiler.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_armcc.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\system_MKL46Z4.h)(0x55FBCAE8)
+I (I2C.h)(0x58AADB65)
+I (TSL25721.h)(0x58AAD2EE)
+F (.\transf.c)(0x58AAD351)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I"E:\Dokumenty\elektronika\semestr V\Laboratorium Projektowe\weather\RTE"-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\transf.o --omf_browse .\objects\transf.crf --depend .\objects\transf.d)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\MKL46Z4.H)(0x55FBCAE8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\core_cm0plus.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574EA096)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_compiler.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_armcc.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\system_MKL46Z4.h)(0x55FBCAE8)
+I (transf.h)(0x58AAD351)
+I (WS2812.h)(0x58AADF23)
+F (.\SysTick.c)(0x58AADBF8)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I"E:\Dokumenty\elektronika\semestr V\Laboratorium Projektowe\weather\RTE"-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\MKL46Z4.h)(0x55FBCAE8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\core_cm0plus.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574EA096)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_compiler.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_armcc.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\system_MKL46Z4.h)(0x55FBCAE8)
+I (SysTick.h)(0x58AADBF8)
+F (RTE\Device\MKL46Z256xxx4\startup_MKL46Z4.s)(0x55FBBCD8)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g --apcs=interwork -I"E:\Dokumenty\elektronika\semestr V\Laboratorium Projektowe\weather\RTE"-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include--pd "__UVISION_VERSION SETA 521" --pd "_RTE_ SETA 1" --pd "MKL46Z256xxx4 SETA 1"--list .\listings\startup_mkl46z4.lst --xref -o .\objects\startup_mkl46z4.o --depend .\objects\startup_mkl46z4.d)
+F (RTE\Device\MKL46Z256xxx4\system_MKL46Z4.c)(0x55FBBCD8)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I"E:\Dokumenty\elektronika\semestr V\Laboratorium Projektowe\weather\RTE"-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\system_mkl46z4.o --omf_browse .\objects\system_mkl46z4.crf --depend .\objects\system_mkl46z4.d)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574EA096)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\MKL46Z4.h)(0x55FBCAE8)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\core_cm0plus.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_compiler.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_armcc.h)(0x58259C4E)
+I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Device\Include\system_MKL46Z4.h)(0x55FBCAE8)

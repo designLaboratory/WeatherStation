@@ -12,4 +12,5 @@ void clock_init(void);
 void dma_initial(void);
 void tpm_init(void);
 void dma_data_init(void);
+void diodes_default(void);
 #endif

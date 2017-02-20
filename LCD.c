@@ -23,6 +23,7 @@ char   lcdBuffer[32]; // used for temporary storage for formatign strings
 /*
 local functions
 */
+void LCD_Config(void);
 void vfnLCD_Init(void);
 void vfnEnablePins(void);  // Pin Enable/ BPEN / COM configurations
 void vfnSetBackplanes(void); // reconfigure COM to default values
@@ -48,6 +49,11 @@ void vfnLCD_interrupt_init(void);
 void vfnLCD_isrv(void);
 
 
+
+void LCD_Config(void){
+  vfnLCD_Init();
+  vfnLCD_Home();
+}
 
 void vfnLCD_Init(void)
 {
@@ -586,3 +592,93 @@ const uint32 MASK_BIT[32] =
        0x40000000 ,
        0x80000000 ,
 };
+
+void SLCD_HideColon(void){
+  LCD->WF8B[11] &= 0xFE;
+}
+
+void SLCD_HideDecimalPointAt(uint8_t p){
+  switch(p){
+    case 1:
+      LCD->WF8B[17] &= 0xFE;
+      break;
+    case 2:
+      LCD->WF8B[8]  &= 0xFE;
+      break;
+    case 3:
+      LCD->WF8B[38] &= 0xFE;
+      break;
+    default:
+      break;
+  }
+}
+
+void SLCD_ShowColon(void){
+  LCD->WF8B[11] |= 0x01;
+}
+
+void SLCD_ShowDecimalPointAt(uint8_t p){
+  switch(p){
+    case 1:
+      LCD->WF8B[17] |= 0x01;
+      break;
+    case 2:
+      LCD->WF8B[8]  |= 0x01;
+      break;
+    case 3:
+      LCD->WF8B[38] |= 0x01;
+      break;
+    default:
+      break;
+  }
+}
+
+void SLCD_ShowMinus(uint8_t p){
+  switch(p){
+    case 1:
+      LCD->WF8B[37] |= 0x04;
+      break;
+    case 2:
+      LCD->WF8B[7]  |= 0x04;
+      break;
+    case 3:
+      LCD->WF8B[53] |= 0x04;
+      break;
+    case 4:
+      LCD->WF8B[10] |= 0x04;
+      break;
+    default:
+      break;
+  }
+}
+
+void SLCD_ShowText(char* s){
+  uint8_t c = 0;
+  
+  vfnLCD_All_Segments_OFF();
+  vfnLCD_Home();
+  
+  while(c < 4 && *s != '\0'){
+    if(*s != '.'){
+      if(*s == '-'){
+        vfnLCD_Write_Char(' ');
+        SLCD_ShowMinus(c+1);
+      }
+      else{
+        vfnLCD_Write_Char(*s);
+      }
+      ++c;
+    }
+    else if(*s == '.'){
+      if(*(s-1) != '.' && c > 0){
+        SLCD_ShowDecimalPointAt(c);
+      }
+      else{
+        ++c;
+        vfnLCD_Write_Char(' ');
+        SLCD_ShowDecimalPointAt(c);
+      }
+    }
+    ++s;
+  }
+}

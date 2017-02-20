@@ -1,11 +1,15 @@
 --cpu Cortex-M0+
 ".\objects\main.o"
-".\objects\gpio.o"
 ".\objects\i2c.o"
 ".\objects\lcd.o"
 ".\objects\s401.o"
-".\objects\tc74.o"
+".\objects\stlm75.o"
 ".\objects\ws2812.o"
+".\objects\lps331.o"
+".\objects\hts221.o"
+".\objects\tsl25721.o"
+".\objects\transf.o"
+".\objects\systick.o"
 ".\objects\startup_mkl46z4.o"
 ".\objects\system_mkl46z4.o"
 --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x1FFFE000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
